@@ -6,7 +6,7 @@ provider "aws"{
 # TODO: provision 4 AWS t2.micro EC2 instances named Udacity T2
 resource "aws_instance" "t2" {
   count = 4
-  ami = "ami-015677ef97522052d"
+  ami = "ami-026a886b"
   instance_type = "t2.micro"
   subnet_id = "subnet-a3c869d5"
   tags = {
@@ -17,7 +17,7 @@ resource "aws_instance" "t2" {
 # TODO: provision 2 m4.large EC2 instances named Udacity M4
 resource "aws_instance" "m4" {
   count = 2
-  ami = "ami-015677ef97522052d"
+  ami = "ami-026a886b"
   instance_type = "m4.large"
   subnet_id = "subnet-a3c869d5"
   tags = {
