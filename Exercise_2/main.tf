@@ -16,6 +16,11 @@ resource "aws_iam_role" "iam_lambda" {
 EOF
 }
 
+resource "aws_iam_role_policy_attachment" "lambda_execution" {
+  role = "${aws_iam_role.iam_lambda.name}"
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+}
+
 data "archive_file" "greet_lambda" {
   type        = "zip"
   source_file = "greet_lambda.py"
