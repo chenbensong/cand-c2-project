@@ -1,0 +1,28 @@
+Your Estimate
+Service Type,Components,Region,Component Price,Service Price
+Amazon EC2 Service (US East (N. Virginia)),,,,$14627.36
+,Compute:,US East (N. Virginia),$14398.6
+,EBS?Volumes:,US East (N. Virginia),$100
+,EBS?IOPS:,US East (N. Virginia),$0
+,EBS?Snapshots:,US East (N. Virginia),$128.76
+Amazon S3 Service (US East (N. Virginia)),,,,$230
+,S3?Standard?Storage:,US East (N. Virginia),$230
+Amazon CloudFront Service,,,,$178.66
+,Data?Transfer?Out:,Global,$170
+,Requests:,Global,$8.66
+Amazon Elastic Load Balancing (US East (N. Virginia)),,,,$113.05
+,Application?LBs:,US East (N. Virginia),$113.05
+Amazon ElastiCache Service (US East (N. Virginia)),,,,$505.14
+,On-Demand?Cache?Nodes:,US East (N. Virginia),$505.14
+Amazon Redshift Service (US East (N. Virginia)),,,,$996.2
+,Compute:,US East (N. Virginia),$996.2
+Amazon VPC Service (US East (N. Virginia)),,,,$48.87
+,NAT?Gateway,US East (N. Virginia),$48.87
+AWS Support (Business),,,,$1464.07
+,Support?for?all?AWS?services:,,$1464.07
+,,Free Tier Discount:,,$-69.72
+,,Total Monthly Payment:,,$18093.63
+
+Here's my reasoning: budget increase is related to the business booming, which means more customers. Thus, we almost estimate double the traffic and corresponding processing powers. We also use more s3 storage for detailed logging.
+Two new investments are: add ElastiCache in front of primary DB server for faster DB access; add a Redshift cluster to analyze customer data which could bring insights to the business.
+Result is within budget and forward-looking.
